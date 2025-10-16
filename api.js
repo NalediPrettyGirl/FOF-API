@@ -14,7 +14,7 @@ const db = admin.firestore();
 
 // Set up Express app
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -42,4 +42,5 @@ app.use('/sundaySermon', sundaySermonApi);
 // Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
+
 });
