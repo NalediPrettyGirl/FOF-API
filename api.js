@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 // Serve static HTML files
-app.use("/", express.static(path.join(__dirname, '../client/assets'))))
+app.use("/", express.static(path.join(__dirname, '...'))))
 
 // Import and mount API modules
 const aboutApi = require('./pages/about');
@@ -44,4 +44,5 @@ app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 
 });
+
 
