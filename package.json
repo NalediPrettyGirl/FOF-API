@@ -1,18 +1,21 @@
 {
-  "name": "api",
+  "name": "fof-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Flames of Fire Ministries — REST API (Express + Firebase Firestore)",
   "main": "api.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "nodemon api.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "firebase": "^12.2.1",
-    "firebase-admin": "^13.5.0"
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
